@@ -6,7 +6,9 @@ var Express = require("bs-express/src/Express.bs.js");
 var route = Express.Router.make(undefined, undefined, undefined, undefined);
 
 Express.Router.get(route, "/", Express.Middleware.from(function (param, param$1, res) {
-          return Express.$$Response.sendString("Hello Home", res);
+          var dict = {};
+          dict["name"] = "mowtwo";
+          return Express.$$Response.json(dict, res);
         }));
 
 exports.route = route;
