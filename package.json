@@ -5,7 +5,7 @@
     "clean": "bsb -clean-world",
     "build": "bsb -make-world",
     "watch": "bsb -make-world -w",
-    "start": "nodemon src/index.bs.js"
+    "start": "nodemon src/Index.bs.js"
   },
   "keywords": [
     "BuckleScript"
